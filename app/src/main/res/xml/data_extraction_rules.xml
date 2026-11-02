@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data-extraction-rules>
+    <cloud-backup>
+        <!-- Do not upload personal vocabulary or learned context counts. -->
+        <exclude domain="sharedpref" path="nova_personal_language.xml" />
+        <exclude domain="sharedpref" path="nova_emoji_preferences.xml" />
+    </cloud-backup>
+    <device-transfer>
+        <!-- Do not silently migrate personal typing statistics to another device. -->
+        <exclude domain="sharedpref" path="nova_personal_language.xml" />
+        <exclude domain="sharedpref" path="nova_emoji_preferences.xml" />
+    </device-transfer>
+</data-extraction-rules>

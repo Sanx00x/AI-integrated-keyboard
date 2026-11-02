@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <!-- Personal vocabulary and context counts must never leave app-private storage. -->
+    <exclude domain="sharedpref" path="nova_personal_language.xml" />
+    <exclude domain="sharedpref" path="nova_emoji_preferences.xml" />
+</full-backup-content>
